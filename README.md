@@ -35,12 +35,11 @@ Sau khi ứng dụng khởi động thành công, hãy truy cập: http://localh
     - Database sẽ tự động kiểm tra và chặn thao tác cố tình chèn một giá trị id đã tồn tại, đảm bảo không có hai student nào có cùng id.
 
   + Database có báo lỗi không? Từ đó suy nghĩ xem sự thiếu chặt chẽ này ảnh hưởng gì khi code Java đọc dữ liệu lên?
-  - Cơ sở dữ liệu không báo lỗi vì trong script tạo bảng, cột name chỉ được định nghĩa kiểu dữ liệu là TEXT, không có thêm ràng buộc NOT NULL.
-  - Khi ứng dụng Spring Boot đọc dòng dữ liệu này lên thông qua Hibernate, giá trị name là null đối với kiểu String tương ứng trong Java sẽ rất nguy hiểm vì nếu tầng Service hoặc Controller thao tác trực tiếp trên thuộc tính name này
-  (ví dụ: gọi hàm name.toUpperCase()) mà không có bước kiểm tra sơ bộ, ứng dụng sẽ quăng lỗi NullPointerException và gây sập luồng xử lý.
+    - Cơ sở dữ liệu không báo lỗi vì trong script tạo bảng, cột name chỉ được định nghĩa kiểu dữ liệu là TEXT, không có thêm ràng buộc NOT NULL.
+    - Khi ứng dụng Spring Boot đọc dòng dữ liệu này lên thông qua Hibernate, giá trị name là null đối với kiểu String tương ứng trong Java sẽ rất nguy hiểm vì nếu tầng Service hoặc Controller thao tác trực tiếp trên thuộc tính name này (ví dụ: gọi hàm name.toUpperCase()) mà không có bước kiểm tra sơ bộ, ứng dụng sẽ quăng lỗi NullPointerException và gây sập luồng xử lý.
 
   + Tại sao mỗi lần tắt ứng dụng và chạy lại, dữ liệu cũ trong Database lại bị mất hết?
-  - File cấu hình application.properties của dự án có thuộc tính cấu hình được thiết lập là spring.jpa.hibernate.ddl-auto: create. Mỗi khi chạy lại ứng dụng, Hibernate sẽ xóa toàn bộ dữ liệu cũ đi và tạo lại bảng mới hoàn toàn.
+    - File cấu hình application.properties của dự án có thuộc tính cấu hình được thiết lập là spring.jpa.hibernate.ddl-auto: create. Mỗi khi chạy lại ứng dụng, Hibernate sẽ xóa toàn bộ dữ liệu cũ đi và tạo lại bảng mới hoàn toàn.
 
 5. Screenshot cho các module trong Lab 4:
   + Trang danh sách
