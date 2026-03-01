@@ -14,7 +14,7 @@
     - Đợi Eclipse tải các dependencies từ pom.xml.
   + Cấu hình Cơ sở dữ liệu: Mở file src/main/resources/application.properties và cập nhật thông số kết nối của bạn:
 
-```
+```properties
   spring.datasource.url=jdbc:postgresql://your-hostname:port/your-db?sslmode=require
   spring.datasource.username=your-username
   spring.datasource.password=your-password
