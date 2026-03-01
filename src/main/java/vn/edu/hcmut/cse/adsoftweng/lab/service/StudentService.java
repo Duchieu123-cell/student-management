@@ -16,9 +16,9 @@ public class StudentService {
     public List<Student> getAll() {
         return repository.findAll();
     }
-    
     public Student getById(String id) {
-        return repository.findById(id).orElse(null);
+        return repository.findById(id)
+        		.orElse(null);
     }
 
     public void save(Student student) {
