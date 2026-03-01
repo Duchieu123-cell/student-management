@@ -4,7 +4,6 @@
   + Chuẩn bị
     - Đã cài đặt JDK 21.
     - Đã cài đặt Eclipse IDE for Enterprise Java and Web Developers.
-    - Đã có tài khoản Neon.tech.
   + Clone project
   + Import vào Eclipse IDE
     - Mở Eclipse.
