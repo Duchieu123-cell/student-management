@@ -22,9 +22,9 @@
   spring.datasource.password=your-password
 ```
   5. Chạy ứng dụng
-    - Cách 1: Chuột phải vào project -> Run As -> Spring Boot App.
-    - Cách 2: Mở Terminal tại thư mục gốc và gõ: mvn spring-boot:run
-    - Sau khi ứng dụng khởi động thành công, hãy truy cập: http://localhost:8080/students
+    + Cách 1: Chuột phải vào project -> Run As -> Spring Boot App.
+    + Cách 2: Mở Terminal tại thư mục gốc và gõ: mvn spring-boot:run
+    Sau khi ứng dụng khởi động thành công, hãy truy cập: http://localhost:8080/students
 
 + Câu trả lời cho các câu hỏi lý thuyết trong phần Lab:
   1. Cố tình Insert một sinh viên có id trùng với một người đã có sẵn. Quan sát thông báo lỗi: UNIQUE constraint failed. Tại sao Database lại chặn thao tác này?
