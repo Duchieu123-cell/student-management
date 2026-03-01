@@ -1,11 +1,10 @@
 Student Management System (Spring Boot + PostgreSQL)
-Dự án quản lý sinh viên đơn giản được xây dựng trên kiến trúc layered (Entity-Repository-Service-Controller) của Spring Boot, sử dụng Thymeleaf cho giao diện (SSR) và PostgreSQL làm cơ sở dữ liệu.
-Tính năng chính
+Dự án quản lý sinh viên đơn giản được xây dựng trên kiến trúc layered (Entity-Repository-Service-Controller) của Spring Boot, sử dụng Thymeleaf cho giao diện (SSR) và PostgreSQL làm cơ sở dữ liệu. Tính năng chính:
   + Danh sách sinh viên: Xem toàn bộ sinh viên trong hệ thống.
   + Tìm kiếm: Tìm kiếm sinh viên theo tên linh hoạt.
   + Chi tiết: Xem thông tin chi tiết từng sinh viên.
   + CRUD đầy đủ: Thêm mới, Chỉnh sửa và Xóa sinh viên.
-Công nghệ sử dụng
+Công nghệ sử dụng:
   + Backend: Java 21, Spring Boot 4.x, Spring Data JPA.
   + Frontend: Thymeleaf, HTML5, Bootstrap 5.
   + Database: PostgreSQL (Neon.tech).
