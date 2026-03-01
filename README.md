@@ -31,8 +31,8 @@ Sau khi ứng dụng khởi động thành công, hãy truy cập: http://localh
 
 4. Câu trả lời cho các câu hỏi lý thuyết trong phần Lab:
   + Cố tình Insert một sinh viên có id trùng với một người đã có sẵn. Quan sát thông báo lỗi: UNIQUE constraint failed. Tại sao Database lại chặn thao tác này?
-  - Trong câu lệnh tạo bảng, cột id đã được định nghĩa là PRIMARY KEY. Khóa chính (PRIMARY KEY) có vai trò định danh duy nhất cho mỗi record trong một bảng.
-  - Database sẽ tự động kiểm tra và chặn thao tác cố tình chèn một giá trị id đã tồn tại, đảm bảo không có hai student nào có cùng id.
+    - Trong câu lệnh tạo bảng, cột id đã được định nghĩa là PRIMARY KEY. Khóa chính (PRIMARY KEY) có vai trò định danh duy nhất cho mỗi record trong một bảng.
+    - Database sẽ tự động kiểm tra và chặn thao tác cố tình chèn một giá trị id đã tồn tại, đảm bảo không có hai student nào có cùng id.
 
   + Database có báo lỗi không? Từ đó suy nghĩ xem sự thiếu chặt chẽ này ảnh hưởng gì khi code Java đọc dữ liệu lên?
   - Cơ sở dữ liệu không báo lỗi vì trong script tạo bảng, cột name chỉ được định nghĩa kiểu dữ liệu là TEXT, không có thêm ràng buộc NOT NULL.
