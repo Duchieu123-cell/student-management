@@ -13,11 +13,11 @@
         <div class="card-body">
             <form th:action="@{/students/save}" th:object="${student}" method="post">
                 <div class="mb-3">
-                    <label class="form-label">Mã Sinh Viên (ID):</label>
+                    <label class="form-label">ID:</label>
                     <input type="text" th:field="*{id}" class="form-control" required th:readonly="${student.id != null}">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Họ và Tên:</label>
+                    <label class="form-label">Họ tên:</label>
                     <input type="text" th:field="*{name}" class="form-control" required>
                 </div>
                 <div class="mb-3">
@@ -29,8 +29,8 @@
                     <input type="number" th:field="*{age}" class="form-control" min="18" required>
                 </div>
                 <div class="mt-4">
-                    <button type="submit" class="btn btn-success">Lưu Lại</button>
-                    <a th:href="@{/students}" class="btn btn-secondary">Hủy Bỏ</a>
+                    <button type="submit" class="btn btn-success">Lưu</button>
+                    <a th:href="@{/students}" class="btn btn-secondary">Hủy</a>
                 </div>
             </form>
         </div>
