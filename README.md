@@ -16,10 +16,11 @@
   4. Cấu hình Cơ sở dữ liệu
   Mở file src/main/resources/application.properties và cập nhật thông số kết nối của bạn:
 
+```properties
   spring.datasource.url=jdbc:postgresql://your-hostname:port/your-db?sslmode=require
   spring.datasource.username=your-username
   spring.datasource.password=your-password
-      
+```
   5. Chạy ứng dụng
     - Cách 1: Chuột phải vào project -> Run As -> Spring Boot App.
     - Cách 2: Mở Terminal tại thư mục gốc và gõ: mvn spring-boot:run
