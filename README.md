@@ -23,7 +23,7 @@
     - Cách 1: Chuột phải vào project -> Run As -> Spring Boot App.
     - Cách 2: Mở Terminal tại thư mục gốc và gõ:
 
-```command
+```properties
 mvn spring-boot:run
 ```
 
