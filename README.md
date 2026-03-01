@@ -4,6 +4,7 @@
   + Chuẩn bị
     - Đã cài đặt JDK 21.
     - Đã cài đặt Eclipse IDE for Enterprise Java and Web Developers.
+    - Đã cài đặt PostgreSQL local.
   + Clone project
   + Import vào Eclipse IDE
     - Mở Eclipse.
